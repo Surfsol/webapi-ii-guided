@@ -1,14 +1,18 @@
-//making file to contian endpoints with /api/hubs, instead of putting on index.js
+//req.query is an object that will have all query string parameters
+// pass query string parameters
 
+//making file to contian endpoints with /api/hubs, instead of putting on index.js
+console.log('Im here')
 const express = require('express')
 
-
+//make sure to invoke f()
 const router = express.Router()
 
+//5
 const Hubs = require('./hubs-model.js')
-
+//3 
 //for an url that begins with /api/hubs
-// remove all /api/hubs
+//4. remove all /api/hubs
 //change server to router
 router.get('/', async (req, res) => {
     try {

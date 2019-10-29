@@ -12,7 +12,7 @@ module.exports = {
   findMessageById,
   addMessage,
 };
-
+//query selectors, after url is ? -means query string parameter
 function find(query) {
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);

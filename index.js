@@ -5,8 +5,9 @@ const express = require('express');
 
 const server = express();
 
+//1
 const hubsRouter = require('./hubs/hubs-router.js')
-//direct server to hubs-router.js
+//2. direct server to hubs-router.js
 server.use('/api/hubs', hubsRouter)
 
 server.use(express.json());
